@@ -1,0 +1,9 @@
+{
+  "env": {
+    "MONGO_ATLAS_PWD": "911911911i*",
+    "MONGO_ATLAS_USER": "sl9site",
+    "MONGO_ATLAS_HOST": "cluster0-2nnqp.mongodb.net",
+    "MONGO_ATLAS_DB_NAME": "test"
+  }
+}
+
