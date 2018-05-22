@@ -37,9 +37,8 @@ router.post('/', (req, res, next) => {
     })
     .catch((err) => {
       console.log(err);
-
       res.status(500).json({
-        error: errorMessage,
+        error: err,
       });
     });
 });
@@ -74,10 +73,9 @@ router.patch('/:productId', (req, res, next) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).json;
-      {
-        err;
-      }
+      res.status(500).json({
+        error: err,
+      });
     });
 });
 router.delete('/:productId', (req, res, next) => {
