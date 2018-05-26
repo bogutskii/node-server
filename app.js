@@ -11,6 +11,8 @@ const orderRoutes = require('./api/routes/orders');
 // ===== DATABASE ======
 mongoose.connect(`mongodb+srv://${process.env.MONGO_ATLAS_USER}:${process.env.MONGO_ATLAS_PWD}@${process.env.MONGO_ATLAS_HOST}/${process.env.MONGO_ATLAS_DB_NAME}`);
 
+mongoose.Promise = global.Promise;
+
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
